@@ -1,5 +1,21 @@
 @import 'reset';
 
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+     url('../fonts/Inter-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+     url('../fonts/Inter-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -26,5 +42,60 @@ button {
   cursor: pointer;
 }
 
+body {
+  background-color: greenyellow;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.btn {
+  background-color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 18px 65px;
+  border-radius: 30px;
+}
+
+.header {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__btn {
+    margin-left: auto;
+    margin-right: 160px;
+  }
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'media';
